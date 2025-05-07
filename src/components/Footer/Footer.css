@@ -44,15 +44,15 @@ hr {
     background-color: var(--color-lightBg);
     margin: 1.2rem 0;
 }
-.social-icons {
+.footer-section .social-icons {
     display: flex;
     gap: 1.6rem;
 }
-.social-icons a {
+.footer-section .social-icons a {
     color: var(--color-white);
     transition: all 0.3s ease-in-out;
     text-decoration: none;
 }
-.social-icons a:hover {
+.footer-section  .social-icons a:hover {
     color: var(--color-accent);
 }

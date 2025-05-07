@@ -122,3 +122,38 @@ h1 {
     flex-direction: column;
     gap: 1rem;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .home-section {
+        align-items: baseline;
+    }
+    .half-width {
+        width: 100% !important;
+        text-align: left;
+    }
+    h1, .home-content p  {
+        width: 100%;
+    }
+    .home-image {
+        width: 100%;
+        justify-content: center;
+    }
+    .counters {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0rem;
+    }
+    .counters .counter-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .cta-section {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .cta-content {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
