@@ -1,0 +1,239 @@
+/* VerticalTab.css */
+.vertical-tab-container {
+    width: 100%;
+  }
+  
+  /* Tab Headers */
+  .vertical-tab-container .tab-headers {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .vertical-tab-container .tab-header {
+    padding: 1rem 0px;
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .vertical-tab-container .tab-header:hover {
+    color: #3b82f6;
+  }
+  
+  .vertical-tab-container .tab-header.active {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+  }
+  
+  /* Tab Content */
+  .vertical-tab-container .tab-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    padding: 0;
+    align-items: stretch;
+  }
+  .vertical-tab-container .tab-content-data {
+    background-color: #F3F6FE;
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+  .vertical-tab-container .tab-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 16px;
+  }
+  .vertical-tab-container .tab-description {
+    font-size: var(--p17-font-size);
+    font-weight: var(--p17-font-weight);
+    line-height: var(--p17-line-height);
+    letter-spacing: var(--p17-letter-spacing);
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Stats Section */
+  .vertical-tab-container .tab-stats {
+    margin-bottom: 24px;
+  }
+  
+  .vertical-tab-container .stats-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+  }
+  
+  .vertical-tab-container .stats-list {
+    list-style-type: disc;
+    font-size: var(--p17-font-size);
+    font-weight: var(--p17-font-weight);
+    line-height: var(--p17-line-height);
+    letter-spacing: var(--p17-letter-spacing);
+    margin-bottom: 1.2rem;
+    padding-left: 1.1rem;
+    
+  }
+  
+  .vertical-tab-container .stats-item {
+    color: var(--color-primary);
+    margin-bottom: 8px;
+  }
+  
+  /* CTA Button */
+  .tab-cta-btn {
+    margin: 3rem 0;
+  }
+  /* Logos Section */
+  .vertical-tab-container .tab-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+  
+  .vertical-tab-container .logo-item {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1.3rem;
+    width: 31%;
+    text-align: center;
+  }
+  
+  .vertical-tab-container .logo-icon {
+    width:100%;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
+  
+  .vertical-tab-container .logo-name {
+    font-size: 1.05rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+  }
+
+  /* Responsive styles for VerticalTab.css */
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 992px) {
+    .vertical-tab-container .tab-headers {
+      gap: 1rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 0.5rem;
+    }
+    
+    .vertical-tab-container .tab-header {
+      padding: 0.8rem 0;
+      font-size: 1rem;
+    }
+    
+    .vertical-tab-container .tab-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .vertical-tab-container .tab-logos {
+      padding: 0 1rem;
+    }
+    
+    .vertical-tab-container .logo-item {
+      width: 45%;
+    }
+  }
+  
+  /* For mobile devices */
+  @media screen and (max-width: 768px) {
+    .vertical-tab-container .tab-headers {
+      flex-wrap: nowrap;
+      gap: 0.5rem;
+    }
+    
+    .vertical-tab-container .tab-header {
+      padding: 0.6rem 0;
+      font-size: 0.9rem;
+      letter-spacing: 0.02rem;
+    }
+    
+    .vertical-tab-container .tab-content-data {
+      padding: 1rem;
+    }
+    
+    .vertical-tab-container .tab-title {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+    
+    .vertical-tab-container .tab-description {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    
+    .vertical-tab-container .stats-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+    }
+    
+    .vertical-tab-container .stats-list {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      padding-left: 1rem;
+    }
+    
+    .vertical-tab-container .tab-logos {
+      justify-content: center;
+      padding: 0;
+    }
+    
+    .vertical-tab-container .logo-item {
+      width:47%; 
+    }
+    
+    .tab-cta-btn {
+      margin: 1.5rem 0;
+    }
+  }
+  
+  /* For smaller mobile devices */
+  @media screen and (max-width: 480px) {
+    .vertical-tab-container .tab-headers {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      gap: 2rem;
+      
+    }
+    
+    .vertical-tab-container .tab-header {
+      text-align: center;
+    }
+    
+    .vertical-tab-container .tab-header.active {
+      border-color: #2563eb;
+    }
+    
+    .vertical-tab-container .tab-content-data {
+      border-radius: 0.5rem;
+    }
+    
+    .vertical-tab-container .logo-item {
+      padding: 1rem;
+    }
+    
+    .vertical-tab-container .logo-icon {
+      height: 48px;
+    }
+    
+    .vertical-tab-container .logo-name {
+      font-size: 0.9rem;
+    }
+  }

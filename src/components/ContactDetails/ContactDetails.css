@@ -1,0 +1,66 @@
+.contact-details.container {
+    gap: 5rem;
+}
+.contact-details p {
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+.contact-details .half-width {
+    overflow: hidden;
+}
+.contact-details li {
+    margin-bottom: 0.91rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.contact-details li svg {
+    font-size: 1.3rem;
+    fill: var(--color-secondary);
+}
+.contact-details ul li a {
+    font-size: 1.2rem;
+    line-height: 2.1 rem;
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+.contact-details ul li a:hover {
+    color: black;
+}
+.contact-details .social-icons {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+.contact-details .social-icons a{
+    background-color: var(--color-lightBg);
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-secondary);
+    height: 2.1rem;
+
+}
+.contact-details .social-icons a svg {
+    fill: var(--color-secondary);
+    height: 1.05rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .contact-details.container {
+        gap: 2rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-details.container {
+        gap: 2rem;
+    }
+  }

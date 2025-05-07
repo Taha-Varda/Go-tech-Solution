@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram , FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 function SocialIcons() {
     return (
@@ -8,13 +8,13 @@ function SocialIcons() {
                 <FaFacebookF className='social-icon' />
             </a>
             <a href='https://www.instagram.com/' target='_blank' rel='noopener noreferrer'>
-                <img src='/images/instagram.png' alt='Instagram' className='social-icon' />
+                <FaInstagram className='social-icon' />
             </a>
             <a href='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer'>
-                <img src='/images/linkedin.png' alt='LinkedIn' className='social-icon' />
+                <FaLinkedinIn className='social-icon' />
             </a>
             <a href='https://twitter.com/' target='_blank' rel='noopener noreferrer'>
-                <img src='/images/twitter.png' alt='Twitter' className='social-icon' />
+                <FaYoutube className='social-icon' />
             </a>
         </div>
     );

@@ -1,0 +1,102 @@
+/* HorizontalTab.css */
+.horizontal-tab-container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Metropolis', sans-serif;
+  }
+  
+  .tab-layout {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  /* Tab sidebar */
+  .tab-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 0.8rem;   
+  }
+  
+  .tab-item {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: #F3F6FE;
+    color: #4b5563;
+  }
+  
+  .tab-item:hover {
+    background-color: #d0dcfa;
+  }
+  
+  .tab-item.active {
+    background-color: var(--color-secondary);
+    color: white;
+  }
+  
+  .tab-icon {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tab-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+    letter-spacing: 0.05rem;
+    color: var(--color-primary);
+  }
+  .tab-item.active .tab-title {
+    color: var(--color-white);
+  }
+  
+  /* Content area */
+  .tab-content-area {
+    width: 50%;
+    background-color: white;
+  }
+  
+  .tab-content {
+    padding: 16px;
+  }
+  
+  .tab-content h3 {
+    color: var(--color-secondary);  
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 8px;
+  }
+  
+  .tab-content p {
+    color: var(--color-primary);
+  }
+  
+  /* Media query for responsive layout */
+  @media (max-width: 768px) {
+    .tab-layout {
+      flex-direction: column;
+    }
+    .tab-sidebar {
+     flex-direction: row;
+     overflow-x: scroll;
+     width: 100%;
+    }
+    .tab-item {
+      padding: 1rem;
+      min-width: 70%;
+    }
+    .tab-title {
+      font-size: 1rem;
+      line-height: 1.1rem;
+    }
+    .tab-content-area {
+      width: 100%;
+      padding: 0;
+    }
+  }
