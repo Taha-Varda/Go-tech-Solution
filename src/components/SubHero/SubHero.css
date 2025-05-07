@@ -1,0 +1,50 @@
+.subhero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    gap: 2.5rem;
+    background-color: var(--color-lightBg);
+    background-image: url('../../assets/images/designs/m-hero-with-blocks-bg.webp');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left bottom;
+}
+.half-width {
+    width: 50%;
+}
+.subHeroContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.subHeroContent h2 {
+    color: var(--color-secondary);
+}
+.subHeroContent p {
+    color: var(--color-primary);
+}
+.blue-counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.blue-counter .counter-item {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    width: auto;
+    padding: 1.565rem 3rem 4rem 1.565rem;
+    background-image: url('../../assets/images/designs/square-bg-dark.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+}
+.blue-counter .counter-item:nth-child(1),
+.blue-counter .counter-item:nth-child(3) {
+    margin-top: -1.3rem;
+    margin-bottom: 1.3rem;
+}
+.blue-counter .counter-item h2 {
+    color: var(--color-accent);
+}

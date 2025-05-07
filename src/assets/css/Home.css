@@ -1,0 +1,124 @@
+/* Section-1 : Hero */
+.home-section {
+    font-family: 'Metropolis', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-background);
+    padding-top: 4.75rem;
+    padding-bottom: 4.75rem;
+    background-color: var(--color-lightBg);
+    overflow-x: hidden;
+}
+.half-width {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: 0.05rem;
+    color: var(--color-primary);
+    margin: 0;
+    width: 80%;
+}
+.home-content p {
+    color: var(--color-primary);
+    width: 80%;
+}
+.home-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counters {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+.counters .counter-item {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 1rem 0.65rem;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+}
+.counters .counter-item h2 {
+    color: var(--color-secondary);
+    margin: 0;
+}
+.counters .counter-item p {
+    color: var(--color-background);
+    margin: 0;
+    width: 100%;
+}
+
+/* Sectionn-2 : Service */
+.service-section h2 {
+    color: var(--color-primary);
+}
+
+/* Section-3 : CTA */
+.cta-section {
+    background-color: var(--color-lightBg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cta-section h2{
+    color: var(--color-secondary);
+    margin: 0;
+}
+.cta-content {
+    width: 50%;
+    color: var(--color-primary);
+}
+
+/* Section-4 : About */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 2rem;
+    background-color: var(--color-secondary);
+}
+.about-section h2 {
+    color: var(--color-white);
+    margin: 0;
+}
+.dark-counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+.dark-counter .counter-item {
+    background-color: var(--color-0F224E);
+    color: var(--color-white);
+    width: auto;
+    padding: 1.565rem 3rem 4rem 1.565rem;
+    background-image: url('../images/designs/square-bg.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+}
+.dark-counter .counter-item h2 {
+    color: var(--color-accent);
+}
+.icon-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -1,0 +1,22 @@
+.icon-box {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1.3rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--color-primary);
+}
+.icon-box-content h2 {
+  color: var(--color-lightBg);
+  text-transform: var(--uppercase-text-transform);
+  font-size: 1.44rem;
+  line-height: 1.94rem;
+  letter-spacing: 0.055rem;
+  font-weight: 700;
+  margin: 0;
+}
+.icon-box-content p {
+  color: var(--color-lightBg);
+  margin-top: 0.5rem;
+}
