@@ -2,7 +2,29 @@ import React, { useState } from 'react';
 import YellowButton from '../../assets/elements/YellowBtn';
 import './VerticalTab.css';
 
-const VerticalTab = ({ tabs }) => {
+interface Logo {
+  name: string;
+  icon: string;
+}
+
+interface TabStats {
+  title: string;
+  items: string[];
+}
+
+interface TabItem {
+  title: string;
+  description: string;
+  stats: TabStats;
+  cta: string;
+  logos: Logo[];
+}
+
+interface VerticalTabProps {
+  tabs: TabItem[];
+}
+
+const VerticalTab: React.FC<VerticalTabProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (

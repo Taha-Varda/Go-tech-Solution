@@ -15,7 +15,7 @@ import Technologies from './pages/TechStack';
 import Projects from './pages/Projects';
 import { Routes, Route } from 'react-router-dom';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Header />

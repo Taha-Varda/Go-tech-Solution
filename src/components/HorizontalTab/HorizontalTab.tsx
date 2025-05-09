@@ -1,7 +1,17 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './HorizontalTab.css'; // Adjust the path as necessary
 
-const HorizontalTab = ({ tabs }) => {
+interface TabItem {
+  title: string;
+  icon: React.ReactNode;
+  content: React.ReactNode;
+}
+
+interface HorizontalTabProps {
+  tabs: TabItem[];
+}
+
+const HorizontalTab: React.FC<HorizontalTabProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
