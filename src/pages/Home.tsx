@@ -12,6 +12,8 @@ import ContactForm from '../components/ContactForm/ContactForm';
 import ContactDetails from '../components/ContactDetails/ContactDetails';
 import { FaAngular } from "react-icons/fa";
 
+// home
+
 // Define types for our data structures
 interface ServiceTab {
   title: string;
