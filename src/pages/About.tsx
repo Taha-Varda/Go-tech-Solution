@@ -5,6 +5,8 @@ import Counter from '../assets/elements/Counter';
 import LogoSlider from '../assets/elements/LogoSlider';
 import WhiteIconBox from '../assets/elements/WhiteIconBox'; 
 import HorizontalTab from '../components/HorizontalTab/HorizontalTab';
+import ContactForm from '../components/ContactForm/ContactForm';
+import ContactDetails from '../components/ContactDetails/ContactDetails';
 
 interface ServiceTab {
   title: string;
@@ -124,7 +126,13 @@ const About: React.FC = () =>{
                     <WhiteIconBox icon='' title="GLOBAL COVERAGE ACROSS TIME ZONES" description="We are available 24/7 at your service as we operate across 4 different time zones, which is why we ensure seamless communication. Our team at Go InfoTech is available at your service anytime."/>
                     <WhiteIconBox icon='' title="WIDE RANGE OF SERVICES" description="Offering software development services, including custom software development, mobile app development, web application development, software maintenance and support, and more."/>
                 </div>
-        </section>   
+        </section> 
+
+        {/* Contact Details */}
+        <ContactDetails />
+
+        {/* <!-- Contact Section --> */}
+        <ContactForm />
         </>
     );
 }
