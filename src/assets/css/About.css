@@ -1,0 +1,54 @@
+.section-heading {
+    width: 100%;
+    color: var(--color-primary);
+}
+.about-hero .blue-counter {
+    display: none !important;
+}
+.about-hero .half-width {
+    width: 45%;
+}
+.about-us {
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+}
+.about-us .half-width {
+    width: 45%;
+}
+.about-us .para17 {
+    color: var(--color-primary);
+}
+.about-us hr {
+    background-color: aliceblue;
+    height: auto;
+    width: 2px;
+}
+.about-us .blue-counter .counter-item{
+  margin: 0 !important;
+  padding-bottom: 1rem !important;
+}
+
+/*  */
+.about-why-us {
+    background-color: var(--color-lightBg);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-why-us .icon-box {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F6FE; 
+    justify-content: flex-start;  
+}
+.about-why-us .icon-boxes {
+    margin-top: 2rem;
+    flex-direction: row;
+}
+.about-why-us .icon-boxes h2 {
+    color: var(--color-secondary);
+}
+.about-why-us .icon-boxes p {
+    color: var(--color-primary);
+}

@@ -10,6 +10,7 @@ import HorizontalTab from '../components/HorizontalTab/HorizontalTab';
 import VerticalTab from '../components/VerticalTab/VerticalTab';
 import ContactForm from '../components/ContactForm/ContactForm';
 import ContactDetails from '../components/ContactDetails/ContactDetails';
+import { FaAngular } from "react-icons/fa";
 
 // Define types for our data structures
 interface ServiceTab {
@@ -20,7 +21,7 @@ interface ServiceTab {
 
 interface Logo {
   name: string;
-  icon: string;
+  icon: React.ReactNode;
 }
 
 interface TabStats {
@@ -37,6 +38,7 @@ interface TabData {
 }
 
 const Home: React.FC = () => {
+
     const serviceTabs: ServiceTab[] = [
         {
         title: 'STAFF AUGMENTATION',
@@ -120,7 +122,7 @@ const Home: React.FC = () => {
           },
           cta: "CONTACT US",
           logos: [
-            { name: "Angular", icon: '' },
+            { name: "Angular", icon: <FaAngular /> },
             { name: "React JS", icon: '' },
             { name: "Vue", icon: '' }
           ]
@@ -197,6 +199,7 @@ const Home: React.FC = () => {
                     <Counter counterNumber="200+" counterTitle="Projects" />
                     <Counter counterNumber="5+" counterTitle="Years of Experience" />
                     <Counter counterNumber="70+" counterTitle="Happy Clients" />
+                    <FaAngular />
                 </div>
             </div>
 

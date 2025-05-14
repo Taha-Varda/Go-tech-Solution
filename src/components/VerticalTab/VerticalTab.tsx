@@ -4,7 +4,7 @@ import './VerticalTab.css';
 
 interface Logo {
   name: string;
-  icon: string;
+  icon: React.ReactNode;  // Changed from string to ReactNode
 }
 
 interface TabStats {
@@ -45,31 +45,36 @@ const VerticalTab: React.FC<VerticalTabProps> = ({ tabs }) => {
       {/* Active Tab Content */}
       <div className="tab-content">
         <div className='tab-content-data'>
-        <h2 className="tab-title">{tabs[activeTab].title}</h2>
-        <p className="tab-description">{tabs[activeTab].description}</p>
+          <h2 className="tab-title">{tabs[activeTab].title}</h2>
+          <p className="tab-description">{tabs[activeTab].description}</p>
 
-        {tabs[activeTab].stats && (
-          <div className="tab-stats">
-            <h3 className="stats-title">{tabs[activeTab].stats.title}</h3>
-            <ul className="stats-list">
-              {tabs[activeTab].stats.items.map((item, index) => (
-                <li key={index} className="stats-item">{item}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {tabs[activeTab].cta && (  
-            <div className="tab-cta-btn">
-            <YellowButton text={tabs[activeTab].cta} href="#"/>  
+          {tabs[activeTab].stats && (
+            <div className="tab-stats">
+              <h3 className="stats-title">{tabs[activeTab].stats.title}</h3>
+              <ul className="stats-list">
+                {tabs[activeTab].stats.items.map((item, index) => (
+                  <li key={index} className="stats-item">{item}</li>
+                ))}
+              </ul>
             </div>
-        )}
+          )}
+
+          {tabs[activeTab].cta && (  
+            <div className="tab-cta-btn">
+              <YellowButton text={tabs[activeTab].cta} href="#"/>  
+            </div>
+          )}
         </div>
         {tabs[activeTab].logos && (
           <div className="tab-logos">
             {tabs[activeTab].logos.map((logo, index) => (
               <div key={index} className="logo-item">
-                <img src={logo.icon} alt={logo.name} className="logo-icon" />
+                {/* Changed to handle ReactNode instead of img src */}
+                {typeof logo.icon === 'string' ? (
+                  <img src={logo.icon} alt={logo.name} className="logo-icon" />
+                ) : (
+                  <div className="logo-icon">{logo.icon}</div>
+                )}
                 <p className="logo-name">{logo.name}</p>
               </div>
             ))}

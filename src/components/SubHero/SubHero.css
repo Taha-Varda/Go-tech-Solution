@@ -41,7 +41,8 @@
     background-position: right top;
 }
 .blue-counter .counter-item:nth-child(1),
-.blue-counter .counter-item:nth-child(3) {
+.blue-counter .counter-item:nth-child(3),
+.blue-counter .counter-item:nth-child(5) {
     margin-top: -1.3rem;
     margin-bottom: 1.3rem;
 }

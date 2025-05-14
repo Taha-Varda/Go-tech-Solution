@@ -67,7 +67,6 @@ body {
   width: 100vw;
 }
 
-
 .cta-button {
   color: var(--color-white);
   font-size: var(--btn-font-size);
@@ -116,6 +115,7 @@ body {
   line-height: var(--counter-title-line-height);
   margin: 0;
   width: 100%;
+  letter-spacing: 0.05rem;
 }
 
 
@@ -132,3 +132,4 @@ body {
         max-width: -webkit-fill-available;
     }
 }
+
